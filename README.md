@@ -14,6 +14,11 @@ ts-node index.ts
 
 npx ts-node index.ts
 
-npm run dev
-```
+npm run dev 
 
+
+For Swagger:
+
+http://localhost:3000/api-doc
+
+```
