@@ -12,9 +12,9 @@ import { authenticateToken } from '../utils/auth';
 
 
 // Definiert geschützte Routen (erfordern einen gültigen JWT-Token)
-userRoutes.get('/user/allUserList', authenticateToken, allUserListHandler); // GET /user/allUserList: Gibt eine paginierte Liste aller Benutzer zurück
+userRoutes.get('/allUserList', authenticateToken, allUserListHandler); // GET /user/allUserList: Gibt eine paginierte Liste aller Benutzer zurück
 
 
 // Definiert öffentliche Routen (keine Authentifizierung erforderlich)
-userRoutes.post('/user/register', registerHandler); // POST /user/register: Registriert einen neuen Benutzer und gibt die Benutzerdaten zurück
+userRoutes.post('/register', registerHandler); // POST /user/register: Registriert einen neuen Benutzer und gibt die Benutzerdaten zurück
 //userRoutes.post('/', registerHandler); // POST /user: Registriert einen neuen Benutzer und gibt die Benutzerdaten zurück
